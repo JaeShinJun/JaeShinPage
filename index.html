@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <title>JaeShinPage</title>
+    </head>
+    <body>
+        <section id="home">
+            <div class="home__title">
+                <h3 class="title__text">
+                    안녕하세요! 이곳은
+                    <span class="highlight">전재신 </span>
+                    페이지입니다!
+                </h3>
+                <h3 class="title__text">
+                    Welcome! This is
+                    <span class="highlight">Jae Shin Jun </span> page!
+                </h3>
+            </div>
+            <div class="button page-link" dest="about">
+                <span class="page-link__text"> About Me! </span>
+                <span class="page-link__arrow"> 🡒</span>
+            </div>
+        </section>
+        <div class="nav-container">
+            <ul class="nav">
+                <li class="nav__item button" dest="home">
+                    HOME
+                </li>
+                <li class="nav__item button" dest="about">
+                    ABOUT
+                </li>
+                <li class="nav__item button" dest="portfolio">
+                    PORTFOLIO
+                </li>
+                <li class="nav__item button" dest="contact">
+                    CONTACT
+                </li>
+            </ul>
+        </div>
+        <section id="about">
+            <div class="header">
+                ABOUT
+            </div>
+            <div class="about__wrapper">
+                <div class="about__me">
+                    <div class="me__img-container">
+                        <img
+                            src="./assets/images/about_me.jpg"
+                            alt="me"
+                            class="me__image"
+                        />
+                    </div>
+                    <div class="me__description">
+                        <span>Who's this guy?</span>
+                        <span>웹 개발, 기계학습에 관심이 있습니다.</span>
+                        <span>능력있는 개발자가 되고 싶습니다.</span>
+                    </div>
+                </div>
+                <div class="about__skills">
+                    <div class="skill">
+                        <div class="skill__name">Javascript</div>
+                        <div class="skill__level">
+                            <div class="skill__level-bar"></div>
+                        </div>
+                        <div class="skill__level-percent">60%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">HTML</div>
+                        <div class="skill__level">
+                            <div class="skill__level-bar"></div>
+                        </div>
+                        <div class="skill__level-percent">70%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">CSS</div>
+                        <div class="skill__level">
+                            <div class="skill__level-bar"></div>
+                        </div>
+                        <div class="skill__level-percent">70%</div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill__name">React</div>
+                        <div class="skill__level">
+                            <div class="skill__level-bar"></div>
+                        </div>
+                        <div class="skill__level-percent">50%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">Python</div>
+                        <div class="skill__level">
+                            <div class="skill__level-bar"></div>
+                        </div>
+                        <div class="skill__level-percent">70%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">Pytorch</div>
+                        <div class="skill__level">
+                            <div class="skill__level-bar"></div>
+                        </div>
+                        <div class="skill__level-percent">70%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">C++</div>
+                        <div class="skill__level">
+                            <div class="skill__level-bar"></div>
+                        </div>
+                        <div class="skill__level-percent">70%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__name">ROS</div>
+                        <div class="skill__level">
+                            <div class="skill__level-bar"></div>
+                        </div>
+                        <div class="skill__level-percent">50%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="header">
+                PORTFOLIO
+            </div>
+            <div class="portfolio__wrapper">
+                <div class="portfolio__tab-container">
+                    <div class="portfolio__tab">
+                        <div class="tab__item">ALL</div>
+                        <div class="tab__item">WEB</div>
+                        <div class="tab__item">CAR</div>
+                        <div class="tab__item">ML</div>
+                    </div>
+                    <div class="float-bar">
+                        <div class="portfolio__tab">
+                            <div class="tab__item">ALL</div>
+                            <div class="tab__item">WEB</div>
+                            <div class="tab__item">CAR</div>
+                            <div class="tab__item">ML</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="header">
+                CONTACT
+            </div>
+        </section>
+
+        <script src="./assets/js/nav.js"></script>
+        <script src="./assets/js/home.js"></script>
+        <script src="./assets/js/portfolio.js"></script>
+    </body>
+</html>

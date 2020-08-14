@@ -1,0 +1,14 @@
+.highlight {
+    font-weight: 600;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.header {
+    font-size: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+    margin-bottom: 50px;
+}
