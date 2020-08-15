@@ -36,7 +36,7 @@
                     item.classList.remove("hide");
                     item.classList.add("show");
                 });
-            }, 200);
+            }, 270);
         } else {
             galleryItems.forEach((item) => {
                 item.classList.add("hide");
@@ -51,7 +51,7 @@
                         item.classList.add("hide");
                     }
                 });
-            }, 200);
+            }, 270);
         }
     };
 
