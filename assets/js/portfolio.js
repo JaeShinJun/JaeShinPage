@@ -17,11 +17,9 @@
     };
 
     const init = () => {
-        console.log(portfolioTab);
         moveFloatBar(TabItems[0].offsetLeft, TabItems[0].offsetWidth);
         TabItems.forEach((item) => {
-            console.log(item);
-            addEventListener("click", tabItemClickHandle);
+            item.addEventListener("click", tabItemClickHandle);
         });
         portfolioTab.removeEventListener("click", tabItemClickHandle);
     };
