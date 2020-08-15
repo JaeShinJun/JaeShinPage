@@ -29,13 +29,15 @@
     align-items: center;
     padding: 0 40px;
     margin: 0 25px;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 .float-bar {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: red;
+    background-color: #e74c3c;
     height: 30px;
     overflow: hidden;
     transition: left 0.5s ease-in-out;
