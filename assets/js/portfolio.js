@@ -2,7 +2,8 @@
     const floatBar = document.querySelector(".float-bar");
     const floatBarTab = floatBar.querySelector(".portfolio__tab");
     const portfolioTab = document.querySelector(".portfolio__tab");
-    const TabItems = portfolioTab.querySelectorAll(".tab__item");
+    const tabItems = portfolioTab.querySelectorAll(".tab__item");
+    const 
 
     const moveFloatBar = (left, width) => {
         floatBar.setAttribute("style", `left:${left}px; width:${width}px`);
@@ -26,8 +27,8 @@
     };
 
     const init = () => {
-        moveFloatBar(TabItems[0].offsetLeft, TabItems[0].offsetWidth);
-        TabItems.forEach((item) => {
+        moveFloatBar(tabItems[0].offsetLeft, tabItems[0].offsetWidth);
+        tabItems.forEach((item) => {
             item.addEventListener("click", tabItemClickHandle);
         });
         portfolioTab.removeEventListener("click", tabItemClickHandle);
