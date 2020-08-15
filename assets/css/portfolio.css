@@ -157,7 +157,7 @@
     color: #e74c3c;
 }
 
-.item__wrapper .item__button {
+.item__wrapper .item__show-btn {
     border: 1px solid #e74c3c;
     border-radius: 3px;
     background-color: white;
