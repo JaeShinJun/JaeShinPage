@@ -13,6 +13,15 @@
         const {
             target: { offsetLeft: left, offsetWidth: width },
         } = event;
+        const currrentActiveItem = document.querySelector(".tab__item.active");
+        currrentActiveItem.classList.toggle("active");
+        event.target.classList.toggle("active");
+        moveFloatBar(left, width);
+    };
+
+    const resizeWindowBarHandle = () => {
+        const currrentActiveItem = document.querySelector(".tab__item.active");
+        const { offsetLeft: left, offsetWidth: width } = currrentActiveItem;
         moveFloatBar(left, width);
     };
 
@@ -22,6 +31,7 @@
             item.addEventListener("click", tabItemClickHandle);
         });
         portfolioTab.removeEventListener("click", tabItemClickHandle);
+        window.addEventListener("resize", resizeWindowBarHandle);
     };
     init();
 }
