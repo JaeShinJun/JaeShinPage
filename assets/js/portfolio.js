@@ -6,8 +6,6 @@
     const galleryContainer = document.querySelector(".portfolio__gallery");
     const galleryItems = galleryContainer.querySelectorAll(".gallery__item");
 
-    let order = -1;
-
     const moveFloatBar = (left, width) => {
         floatBar.setAttribute("style", `left:${left}px; width:${width}px`);
         floatBarTab.setAttribute("style", `left:-${left}px;`);
