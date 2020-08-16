@@ -11,15 +11,18 @@
             email: inputEmail.value,
             message: textareaMessage.value,
         };
-        const result = await fetch("https://formspree.io/xaypkgdj", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Referrer-Policy": "no-referrer",
-                "Access-Control-Allow-Origin": "*",
-            },
-            body: { message: JSON.stringify(data) },
-        }).then((res) => {
+        const result = await fetch(
+            "https://formspree.io/jsstar1207@gmail.com",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Referrer-Policy": "no-referrer",
+                    "Access-Control-Allow-Origin": "*",
+                },
+                body: { message: JSON.stringify(data) },
+            }
+        ).then((res) => {
             return res.json();
         });
         console.log(result);
