@@ -49,3 +49,37 @@
 .page-link:hover .page-link__arrow {
     transform: rotate(90deg);
 }
+
+footer {
+    width: 100%;
+    height: 15vh;
+    background-color: #1b242f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+footer .footer__go-back-btn {
+    width: 50px;
+    height: 50px;
+    color: #e74c3c;
+    background-color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-25px, -25px);
+    cursor: pointer;
+    border: 1px solid #e74c3c;
+    transition: all 0.5s ease-in-out;
+}
+
+footer .footer__go-back-btn:hover {
+    background-color: #e74c3c;
+    color: white;
+}

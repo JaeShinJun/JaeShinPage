@@ -6,6 +6,7 @@
     const aboutSection = document.getElementById("about");
     const portfolioSection = document.getElementById("portfolio");
     const contactSection = document.getElementById("contact");
+    const goBackBtn = document.querySelector(".footer__go-back-btn");
 
     let isNavFixed;
     let isClicked = false;
@@ -77,12 +78,17 @@
         }
     };
 
+    const goBackBtnClickHandle = (event) => {
+        window.scroll(0, homeSection.offsetTop);
+    };
+
     const init = () => {
         isNavFixed = false;
         navItems.forEach((navItem) => {
             navItem.addEventListener("click", navClickHandle);
         });
         window.addEventListener("scroll", scrollPosHandle);
+        goBackBtn.addEventListener("click", goBackBtnClickHandle);
     };
 
     init();
