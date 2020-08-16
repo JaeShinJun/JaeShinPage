@@ -37,6 +37,7 @@
 
     const scrollPosHandle = (event) => {
         const curScrollPos = window.scrollY;
+        const px2vh = parseInt(window.innerHeight) / 100;
 
         if (!isNavFixed && curScrollPos >= aboutSection.offsetTop) {
             toggleNavFix();
@@ -64,13 +65,13 @@
             nav.querySelector('[dest="contact"]').classList.remove("active");
         } else if (
             portfolioSection.offsetTop <= curScrollPos &&
-            curScrollPos < contactSection.offsetTop
+            curScrollPos < contactSection.offsetTop - px2vh * 15
         ) {
             nav.querySelector('[dest="home"]').classList.remove("active");
             nav.querySelector('[dest="about"]').classList.remove("active");
             nav.querySelector('[dest="portfolio"]').classList.add("active");
             nav.querySelector('[dest="contact"]').classList.remove("active");
-        } else if (contactSection.offsetTop <= curScrollPos) {
+        } else if (contactSection.offsetTop - px2vh * 15 <= curScrollPos) {
             nav.querySelector('[dest="home"]').classList.remove("active");
             nav.querySelector('[dest="about"]').classList.remove("active");
             nav.querySelector('[dest="portfolio"]').classList.remove("active");
