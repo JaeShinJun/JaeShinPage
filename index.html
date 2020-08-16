@@ -397,10 +397,36 @@
                 </div>
             </div>
         </section>
+        <div class="envelope-shape"></div>
         <section id="contact">
             <div class="section__header">
                 CONTACT
             </div>
+
+            <form class="contact-form">
+                <input
+                    type="text"
+                    placeholder="Name"
+                    class="form__name"
+                    name="name"
+                    required
+                />
+                <input
+                    type="email"
+                    placeholder="Enter Email"
+                    name="_replyto"
+                    class="form__email"
+                    required
+                />
+                <textarea
+                    type="textarea"
+                    placeholder="Your Message"
+                    name="message"
+                    class="form__message"
+                    required
+                ></textarea>
+                <input type="submit" class="form__submit-btn" value="Send" />
+            </form>
         </section>
         <footer>
             JaeShinJun &copy;<span class="footer__year"></span>
@@ -413,5 +439,6 @@
         <script src="./assets/js/home.js"></script>
         <script src="./assets/js/portfolio.js"></script>
         <script src="./assets/js/modal.js"></script>
+        <script src="./assets/js/contact.js"></script>
     </body>
 </html>

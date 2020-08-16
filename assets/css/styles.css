@@ -33,12 +33,15 @@ a:active {
     text-decoration: none;
 }
 
-input {
+input,
+textarea {
     border: none;
 }
 
 input:focus,
-input:active {
+input:active,
+textarea:focus,
+textarea:active {
     outline: none;
 }
 
