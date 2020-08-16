@@ -69,3 +69,130 @@
     background-color: white;
     color: #e74c3c;
 }
+
+.success {
+    opacity: 0;
+    transform: scale(0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes showSuccess {
+    0% {
+        transform: none;
+        opacity: 0;
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes hideSuccess {
+    0% {
+        transform: none;
+        opacity: 1;
+    }
+    100% {
+        transform: none;
+        opacity: 0;
+    }
+}
+
+.success.show {
+    animation-name: showSuccess;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.success.hide {
+    animation-name: hideSuccess;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.success .success__mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.success .success__message {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: white;
+    color: black;
+    z-index: 101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+@keyframes showMessage {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 30vw;
+        height: 25vh;
+        opacity: 1;
+    }
+}
+
+@keyframes hideMessage {
+    0% {
+        width: 30vw;
+        height: 25vh;
+        opacity: 1;
+    }
+    100% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+
+.success__message.show {
+    animation-name: showMessage;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.success__message.hide {
+    animation-name: hideMessage;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.success__message .message__text {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.success__message .message__exit-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
