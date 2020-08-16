@@ -33,6 +33,15 @@ a:active {
     text-decoration: none;
 }
 
+input {
+    border: none;
+}
+
+input:focus,
+input:active {
+    outline: none;
+}
+
 section:not(:first-child) {
     padding-top: 100px;
 }
