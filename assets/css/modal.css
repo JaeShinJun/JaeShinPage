@@ -65,6 +65,32 @@
     z-index: 101;
 }
 
+@keyframes showModal {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 70vw;
+        height: 85vh;
+        opacity: 1;
+    }
+}
+
+@keyframes hideModal {
+    0% {
+        width: 70vw;
+        height: 85vh;
+        opacity: 1;
+    }
+    100% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+
 .modal.show {
     animation-name: showModal;
     animation-duration: 0.5s;
@@ -79,38 +105,66 @@
     animation-timing-function: ease-in-out;
 }
 
-@keyframes showModal {
-    0% {
-        width: 0;
-        height: 0;
-        opacity: 0;
-    }
-    30% {
-        width: 0;
-        height: 0;
-        opacity: 0;
-    }
-    100% {
-        width: 70vw;
-        height: 70vh;
-        opacity: 1;
-    }
+.modal .modal__carousel {
+    width: 100%;
+    height: 65%;
+    border-bottom: 1px solid black;
 }
 
-@keyframes hideModal {
-    0% {
-        width: 70vw;
-        height: 70vh;
-        opacity: 1;
-    }
-    70% {
-        width: 0;
-        height: 0;
-        opacity: 1;
-    }
-    100% {
-        width: 0;
-        height: 0;
-        opacity: 0;
-    }
+.modal .modal__info {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal__info .info__title {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 10px;
+}
+
+.modal__info .info__tag {
+    font-size: 18px;
+    font-weight: 600;
+    color: gray;
+    padding-bottom: 10px;
+    margin: 0 20px 10px 20px;
+    border-bottom: 1px solid gray;
+}
+
+.modal__info .info__detail {
+    padding: 0 20px;
+}
+
+.modal__info .info__more {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 0 20px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.info__more .more__link a {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: 1px solid #e74c3c;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.info__more .more__link a:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.info__more .more__exit-btn i {
+    font-size: 30px;
+    margin-right: 5px;
 }
