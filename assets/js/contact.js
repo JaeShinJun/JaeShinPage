@@ -16,6 +16,7 @@
             headers: {
                 "Content-Type": "application/json",
                 "Referrer-Policy": "no-referrer",
+                "Access-Control-Allow-Origin": "*",
             },
             body: { message: JSON.stringify(data) },
         }).then((res) => {
