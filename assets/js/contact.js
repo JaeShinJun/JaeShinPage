@@ -17,10 +17,8 @@
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Referrer-Policy": "no-referrer",
-                    "Access-Control-Allow-Origin": "*",
                 },
-                body: { message: JSON.stringify(data) },
+                body: JSON.stringify(data),
             }
         ).then((res) => {
             return res.json();
