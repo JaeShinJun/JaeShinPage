@@ -60,8 +60,8 @@ footer {
 }
 
 footer .footer__go-back-btn {
-    width: 50px;
-    height: 50px;
+    width: 3vw;
+    height: 3vw;
     color: #e74c3c;
     background-color: white;
     font-size: 30px;
@@ -71,7 +71,7 @@ footer .footer__go-back-btn {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-25px, -25px);
+    transform: translate(-1.5vw, -1.5vw);
     cursor: pointer;
     border: 1px solid #e74c3c;
     transition: all 0.5s ease-in-out;
