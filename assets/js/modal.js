@@ -5,23 +5,35 @@
     let modalContainers = {};
 
     const resizeCarouselHandle = (event) => {
-        document
-            .querySelectorAll(".portfolio__modal-container")
-            .forEach((container) => {
-                const imagesContainer = container.querySelector(
-                    ".carousel__images"
-                );
-                const images = imagesContainer.querySelectorAll(".images__img");
-                imagesContainer.style.width = `${
-                    100 * imagesContainer.childElementCount
-                }%`;
-                images.forEach((image) => {
-                    image.setAttribute(
-                        "style",
-                        `width:${100 / imagesContainer.childElementCount}%;`
-                    );
-                });
-            });
+        const container = document.querySelector(
+            ".portfolio__modal-container.show"
+        );
+
+        const imagesContainer = container.querySelector(".carousel__images");
+        const images = imagesContainer.querySelectorAll(".images__img");
+        imagesContainer.style.width = `${
+            100 * imagesContainer.childElementCount
+        }%`;
+        const { offsetWidth } = imagesContainer.querySelector(".images__img");
+
+        const imageSize = parseInt(offsetWidth, 10);
+
+        const currentPosition = imagesContainer.getAttribute("position")
+            ? parseInt(imagesContainer.getAttribute("position"), 10)
+            : 0;
+
+        imagesContainer.setAttribute(
+            "style",
+            `transform: translateX(${-imageSize * currentPosition}px); width: ${
+                100 * imagesContainer.childElementCount
+            }%;`
+        );
+        images.forEach((image) => {
+            image.setAttribute(
+                "style",
+                `width:${100 / imagesContainer.childElementCount}%;`
+            );
+        });
     };
 
     const sliderLeftBtnClickHandle = (event) => {

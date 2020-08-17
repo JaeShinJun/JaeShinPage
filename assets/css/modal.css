@@ -114,7 +114,6 @@
 }
 
 .modal__carousel .carousel__images {
-    /* width: 400%; */
     height: 100%;
     position: absolute;
     top: 0;
@@ -126,7 +125,6 @@
 }
 
 .carousel__images .images__img {
-    /* width: calc(100% / 4); */
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -186,6 +184,7 @@
 
 .modal__info .info__detail {
     padding: 0 20px;
+    font-weight: 500;
 }
 
 .modal__info .info__more {
@@ -218,6 +217,7 @@
     margin-right: 5px;
 }
 
+/* wetube images */
 #wetube-modal .images__img:nth-child(1) {
     background-image: url("../images/wetube_detail1.png");
 }
@@ -232,4 +232,42 @@
 
 #wetube-modal .images__img:nth-child(4) {
     background-image: url("../images/wetube_detail4.png");
+}
+
+/* jaeflix images */
+#jaeflix-modal .images__img:nth-child(1) {
+    background-image: url("../images/jaeflix_detail1.png");
+}
+
+#jaeflix-modal .images__img:nth-child(2) {
+    background-image: url("../images/jaeflix_detail3.gif");
+}
+
+#jaeflix-modal .images__img:nth-child(3) {
+    background-image: url("../images/jaeflix_detail2.png");
+}
+
+#jaeflix-modal .images__img:nth-child(4) {
+    background-image: url("../images/jaeflix_detail4.png");
+}
+
+/* kokoa images */
+#kokoa-modal .images__img:nth-child(1) {
+    background-image: url("../images/kokoa_detail1.gif");
+}
+
+#kokoa-modal .images__img:nth-child(2) {
+    background-image: url("../images/kokoa_detail3.gif");
+}
+
+#kokoa-modal .images__img:nth-child(3) {
+    background-image: url("../images/kokoa_detail2.gif");
+}
+
+#kokoa-modal .images__img:nth-child(4) {
+    background-image: url("../images/kokoa_detail4.gif");
+}
+
+#kokoa-modal .images__img:nth-child(5) {
+    background-image: url("../images/kokoa_detail5.gif");
 }

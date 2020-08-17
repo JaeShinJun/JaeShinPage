@@ -174,11 +174,11 @@
 }
 
 .WEB:nth-child(1) {
-    background-image: url("../images/wetube_cover.png");
+    background-image: url("../images/jaeflix_cover.png");
 }
 
 .WEB:nth-child(2) {
-    background-image: url("../images/jaeflix_cover.png");
+    background-image: url("../images/wetube_cover.png");
 }
 
 .WEB:nth-child(3) {
